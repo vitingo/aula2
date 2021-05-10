@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="estil.css" />
+        <title>SGA</title>
+
+        <style type="text/css">
+        	
+        		@import url("fontawesome-all.min.css");
+				@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,100italic,300italic");
+
+    				html {
+       					background-image: url("https://uploaddeimagens.com.br/images/003/220/129/original/fundoIF.png?1619756289");
+        				background-size:100%;
+        				opacity:0.70;
+        				-moz-opacity: 0.70;
+       		 			filter: alpha(opacity=70);
+    				}
+
+    				.iconem {
+    					width: 50px;
+    					position: absolute;
+    					right: 180px;
+    					top: 58px;
+        				transition: top 0.5s , right 0.5s;
+    				}
+
+    				.iconem:hover {
+    					width: 50px;
+    					position: absolute;
+    					right: 181px;
+    					top: 57px;
+    				}
+
+    				.cabecalho {
+        				left: 373px;
+        				top: 150px;
+        				margin: 40px;
+        				padding: 15px;
+        				background-image: url("https://uploaddeimagens.com.br/images/003/216/348/original/fundo2.png?1619610422");
+        				background-size:100%;
+        				border: 12px solid rgba(0, 0, 0, .4);
+        				border-radius: 30px;
+        				background-clip: padding-box;
+        				box-shadow: 0 0 0.50em 0 rgba(0, 0, 0, 0.50);
+    				}
+
+    				.sair {
+    					position: absolute;
+    					right: 80px;
+    					top: 65px;
+						padding: 8px;
+        				padding-right: 10px; 
+       		 			padding-left: 10px;
+       		 			width: 70px;
+        				border-radius: 10px;
+        				background-color: #ee3e61;
+        				color: white;
+        				font-family: "Roboto", Helvetica, sans-serif;
+        				font-weight: 800;
+        				font-size: 18px;
+        				cursor: pointer;
+    					box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 1);
+    					transition: box-shadow 0.2s, background-color 0.2s;
+    				}
+
+    				.sair:hover {
+    					position: absolute;
+    					right: 80px;
+    					top: 65px;
+						padding: 8px;
+        				padding-right: 10px; 
+       		 			padding-left: 10px;
+        				border-radius: 10px;
+        				background-color: lightgreen;
+        				color: white;
+        				font-family: "Roboto", Helvetica, sans-serif;
+        				font-weight: 800;
+        				font-size: 18px;
+        				cursor: pointer;
+    					box-shadow: none;
+    				}
+
+    				.btusuario {
+    					border: none;
+    					background: none;
+    					cursor: pointer;
+    					text-align: justify;
+        				color: white;
+        				font-family: "Roboto", Helvetica, sans-serif;
+        				font-weight: 800;
+        				font-size: 23px;
+        				position: relative;
+        				top: -3px;
+        				transition: top 0.5s , text-shadow 0.5s;
+    				}
+
+    				.btusuario:hover {
+    					border: none;
+    					background: none;
+    					cursor: pointer;
+    					text-align: justify;
+        				color: white;
+        				font-family: "Roboto", Helvetica, sans-serif;
+        				font-weight: 800;
+        				font-size: 23px;
+        				position: relative;
+        				top: -4px;
+        				text-shadow: 2px 2px rgba(0, 0, 0, 1);
+    				}
+
+    				.bt {
+    					padding: 105px;
+    					text-align: justify;
+        				font-family: "Roboto", Helvetica, sans-serif;
+       	 				font-weight: 800;
+        				color: #ee3e61;
+        				font-size: 25px;
+        				text-shadow: 1px 1px darkgray;
+    					background-color: white;
+    					border-radius: 50px;
+    					margin: 15px;
+    					margin-top: 50px;
+    					position: relative;
+    					left: 40px;
+    					padding-bottom: 200px;
+    					border: none;
+    					top: 0px;
+    					cursor: pointer;
+    					box-shadow: 6px 6px lightgray;
+    					transition: box-shadow 0.8s , top 0.8s , left 0.8s , background-color 0.2s , color 0.2s;
+    				}
+
+    				.bt:hover {
+    					padding: 105px;
+    					text-align: justify;
+        				font-family: "Roboto", Helvetica, sans-serif;
+       	 				font-weight: 800;
+        				color: white;
+        				font-size: 25px;
+        				text-shadow: 1px 1px darkgray;
+    					background-color: #ee3e61;
+    					border-radius: 50px;
+    					margin: 15px;
+    					margin-top: 50px;
+    					position: relative;
+    					left: 46px;
+    					top: 6px;
+    					padding-bottom: 200px;
+    					border: none;
+    					cursor: pointer;
+    					box-shadow: none;
+    				}
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="cabecalho">
+            <a>
+            	<input class="btusuario" type="submit" value="Usuário" name="bt"> 
+            	<a href=""><img class="iconem" src="https://uploaddeimagens.com.br/images/003/223/295/full/megafone.png?1620004158"></a>
+            	<form action="login.php" method="POST">
+            		<a><input class="sair" type="submit" value="Sair" name="sair"></a>
+        		</form>
+            </a>
+            </h1>
+        </header>
+        	<input class="bt" type="submit" value="Botão" name="bt">
+            <input class="bt" type="submit" value="Botão" name="bt">
+            <input class="bt" type="submit" value="Botão" name="bt">
+            <input class="bt" type="submit" value="Botão" name="bt">
+    </body>
+</html>
